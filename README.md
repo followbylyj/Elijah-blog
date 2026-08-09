@@ -156,7 +156,7 @@ GitHub 只用于保存和展示源码，不会自动更新博客园。每次发�
 - [Zou-Wang/CNblogs-Theme-Sakura](https://github.com/Zou-Wang/CNblogs-Theme-Sakura)
 - 博客园及原主题所使用的 Silence/Sakura 相关样式与脚本
 
-新版紫金顶栏、SVG 品牌标识、导航图标、favicon、兼容性修复及个人配置是在原主题基础上的二次开发。
+新版紫金顶栏、SVG 品牌标识、导航图标、favicon、兼容性修复及个人配置是作者本人在原主题基础上的二次开发。
 
 ## 许可证说明
 
