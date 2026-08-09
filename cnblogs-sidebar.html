@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1346053_111ghkv8md9.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<script src="https://blog-static.cnblogs.com/files/blogs/760098/cnblogs-theme.js?v=20260809-1"></script>
+<script type="text/javascript">
+    $.silence({
+        profile: {
+            enable: true,
+            avatar: 'https://pic.imgdb.cn/item/62d35e7df54cd3f937d0cc53.jpg',
+            favicon: 'brand',
+            notice: '欢迎来到潇湘梧斋！可以点开随笔看看。说明：友链为阮一峰老师的博客，强推他的科技者周刊。评论和留言要登录博客园才能进行，访客看看文章就行了~~'
+        },
+        catalog: {
+            enable: true,
+            move: false,
+            index: false,
+            level1: 'h2',
+            level2: 'h3',
+            level3: 'h4',
+        },
+        signature: {
+            enable: true,
+            home: 'https://www.cnblogs.com/zouwangblog/',
+            license: 'CC BY 4.0',
+            link: 'https://creativecommons.org/licenses/by/4.0'
+        },
+        sponsor: {
+            enable: true,
+            paypal: null,
+            wechat: 'https://pic.imgdb.cn/item/62d5fad4f54cd3f937d62b1f.jpg',
+            alipay: null,
+        },
+        github: {
+            enable: false,
+            color: '#00ced1',
+            fill: '#7fff00',
+            link: 'https://github.com/followbylyj'
+        },
+	topImg: {
+		homeTopImg: [
+"https://api.horosama.com/random.php",
+					],
+              notHomeTopImg: [
+"https://api.horosama.com/random.php",
+					]
+		},
+                      topInfo: {
+					title: '潇湘梧斋,芳迎天下',
+                                        text: '不知乘月几人归，落月摇情满江树。',
+					github: "https://github.com/followbylyj",
+					weibo: "https://weibo.com/u/6113532252",
+					bilibili: "https://space.bilibili.com/399799639?spm_id_from=333.1007.0.0",
+					twitter: "https://x.com/liyijia3003",
+					zhihu:"https://www.zhihu.com/people/dou-bi-xue-ba",
+					mail: "https://www.cnblogs.com/followbylyj/articles/16490778.html",
+				}
+    });
+</script>
+
+<!--纪念日-->
+<script type="text/javascript">
+	function NewDate(str) {
+		str = str.split('-');
+		var date = new Date();
+		date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+		date.setUTCHours(0, 0, 0, 0);
+		return date;
+	}
+
+	function showsectime() {
+		var birthDay = NewDate("2020-03-05");
+		var today = new Date();
+		var timeold = today.getTime() - birthDay.getTime();
+		var sectimeold = timeold / 1000
+		var secondsold = Math.floor(sectimeold);
+		var msPerDay = 24 * 60 * 60 * 1000;
+		var e_daysold = timeold / msPerDay;
+		var daysold = Math.floor(e_daysold);
+		var e_hrsold = (daysold - e_daysold) * -24;
+		var hrsold = Math.floor(e_hrsold);
+		var e_minsold = (hrsold - e_hrsold) * -60;
+		var minsold = Math.floor((hrsold - e_hrsold) * -60);
+		var seconds = Math.floor((minsold - e_minsold) * -60).toString();
+		document.getElementById("showsectime").innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+		setTimeout(showsectime, 1000);
+	}
+	showsectime();
+</script>
+<!--纪念日end-->
